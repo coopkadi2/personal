@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'roboto-mono';
+    src: url(/home/cooperkadish/Desktop/personal/personal/css/RobotoMono-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: 'roboto-mono', sans-serif;
+    color: #000000;
+}
+
+body {
+    background-color:   #139a43;
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    width: 360px;
+    gap: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    border-bottom: 1px dashed #000000;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+h6 {
+    margin: 0;
+    height: 15px;
+    font-size: 10pt;
+    font-weight: 300;
+}
