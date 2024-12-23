@@ -38,6 +38,10 @@ a {
     font-weight: 300;
 }
 
+a:hover {
+    font-weight: 700;
+}
+
 p {
     text-align: justify;
     margin: 0;
