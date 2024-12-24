@@ -48,6 +48,14 @@ a:hover {
     font-weight: 700;
 }
 
+.arrow {
+    display: none;
+  }
+  
+a:hover + .arrow {
+    display: inline-block;
+  }
+
 p {
     text-align: justify;
     margin: 0;
