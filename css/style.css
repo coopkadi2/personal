@@ -11,10 +11,20 @@
 body {
     background-color:   #139a43;
     display: flex;
-    flex-direction: column;
     margin: 60px;
-    max-width: 360px;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
+    flex: 0 1 360px;
+}
+
+.right {
+    text-align: right;
 }
 
 .menu {
@@ -61,6 +71,12 @@ p {
     margin: 0;
     font-size: 12pt;
     font-weight: 100;
+    word-wrap: break-word; /* Handle long text gracefully */
+}
+
+ul, p {
+    margin: 0;
+    padding: 0; /* Reset any unexpected spacing */
 }
 
 h6 {
@@ -68,4 +84,9 @@ h6 {
     height: 15px;
     font-size: 10pt;
     font-weight: 300;
+}
+
+#current {
+    font-weight: 700;
+    display: inline-block;
 }
