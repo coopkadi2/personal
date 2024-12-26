@@ -10,8 +10,20 @@
 
 body {
     display: flex;
-    justify-content: space-between;
     margin: 0;
+}
+
+.start {
+    color: hsl(0, 0%, 75%);
+    text-align: right;
+}
+
+.start-g {
+    text-align: right;
+}
+
+.full {
+    background-color: #139a43;
 }
 
 .left {
@@ -21,7 +33,7 @@ body {
     padding: 60px;
     gap: 30px;
     flex: 0 1 360px;
-    height: 100vh - 120px;
+    height: 100vh;
     overflow: auto;
 }
 
@@ -31,17 +43,11 @@ body {
     flex-grow: 1;
 }
 
-.center {
-    display: flex;
-    flex-direction: column;
-    padding: 60px;
-}
-
 .right {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     padding: 60px;
-    text-align: right;
 }
 
 .menu {
@@ -104,7 +110,34 @@ h6 {
     font-weight: 300;
 }
 
+h5 {
+    margin: 0;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+h4 {
+    margin: 0;
+    font-size: 14pt;
+    font-weight: 300;
+}
+
 #current {
     font-weight: 700;
     display: inline-block;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    max-width: 720px;
+    margin: auto;
+}
+
+.dtl {
+    font-size: 10pt;
+    font-weight: 100;
+    margin-bottom: 15px;
 }
