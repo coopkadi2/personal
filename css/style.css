@@ -62,7 +62,7 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 30px;
+    height: 35px;
     border-bottom: 1px dashed #000000;
     font-weight: 300;
 }
@@ -73,7 +73,7 @@ ul:hover {
 
 a {
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 15pt;
     font-weight: 300;
 }
 
@@ -111,14 +111,16 @@ h6 {
 }
 
 h5 {
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
     font-size: 12pt;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 h4 {
-    margin: 0;
-    font-size: 14pt;
+    margin-top: 120px;
+    margin-bottom: 0;
+    font-size: 15pt;
     font-weight: 300;
 }
 
@@ -130,16 +132,15 @@ h4 {
 .exp {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
     text-align: left;
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc(margin-left);
+    margin-top: 0; /* Initially set to 0 */
 }
 
 .dtl {
     font-size: 10pt;
     font-weight: 100;
-    margin-bottom: 15px;
 }
