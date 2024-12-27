@@ -33,7 +33,7 @@ body {
     padding: 60px;
     gap: 30px;
     flex: 0 1 360px;
-    height: 100vh;
+    align-content: stretch;
     overflow: auto;
 }
 
@@ -133,7 +133,9 @@ h4 {
     gap: 15px;
     text-align: left;
     max-width: 720px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(margin-left);
 }
 
 .dtl {
