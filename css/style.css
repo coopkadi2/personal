@@ -85,6 +85,34 @@ ul:hover {
     font-weight: 700;
 }
 
+.tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    border-bottom: 1px dashed #000000;
+    font-weight: 300;
+}
+
+.tab:hover {
+    font-weight: 700;
+}
+
+button {
+    all: unset; /* Remove default button styling */
+    display: block; /* Match the block layout of the links */
+    font-family: 'roboto-mono', sans-serif;
+    color: #000000;
+    font-size: 15pt;
+    padding: 0;
+    margin: 0;
+    background-color: transparent; /* Match the background */
+    border: none; /* Remove borders */
+}
+
 a {
     text-decoration: none;
     font-size: 15pt;
@@ -95,6 +123,10 @@ a {
     display: none;
   }
 
+.arrow2 {
+    display: none;
+}
+
 a:hover {
     font-weight: 700;
 }
@@ -102,7 +134,12 @@ a:hover {
 a:hover + .arrow {
     display: inline-block;
     font-weight: 700;
-  }
+}
+
+button:hover + .arrow2 {
+    display: inline-block;
+    font-weight: 700;
+}
 
 p {
     text-align: justify;
