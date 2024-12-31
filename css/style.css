@@ -16,6 +16,7 @@ body {
 .start {
     color: hsl(0, 0%, 75%);
     text-align: right;
+    margin-bottom: 60px;
 }
 
 .start-g {
@@ -99,6 +100,7 @@ ul:hover {
 
 .tab:hover {
     font-weight: 700;
+    cursor: pointer;
 }
 
 button {
@@ -137,6 +139,11 @@ a:hover + .arrow {
 }
 
 button:hover + .arrow2 {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.active {
     display: inline-block;
     font-weight: 700;
 }
@@ -196,8 +203,21 @@ h4 {
     font-weight: 100;
 }
 
-img {
+.port img {
     max-width: 720px; /* Desired maximum width */
     max-height: 720px; /* Desired maximum height */
+    width: auto;
+    height: auto;
+    margin: auto;
     object-fit: contain;
+    padding: auto;
+}
+
+.port {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
 }
