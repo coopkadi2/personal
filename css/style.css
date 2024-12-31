@@ -16,7 +16,6 @@ body {
 .start {
     color: hsl(0, 0%, 75%);
     text-align: right;
-    margin-bottom: 60px;
 }
 
 .start-g {
@@ -204,13 +203,14 @@ h4 {
 }
 
 .port img {
-    max-width: 720px; /* Desired maximum width */
     max-height: 720px; /* Desired maximum height */
     width: auto;
     height: auto;
     margin: auto;
     object-fit: contain;
     padding: auto;
+    scroll-snap-align: center; /* Snap to the center of the viewport */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for transform and opacity */
 }
 
 .port {
@@ -220,4 +220,8 @@ h4 {
     align-items: center;
     height: 100%;
     gap: 30px;
+    margin-top: calc((100vh - 866px)/2);
+    margin-bottom: calc((100vh - 840px)/2);
+    scroll-snap-type: y mandatory; /* Snap vertically (y-axis) */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
