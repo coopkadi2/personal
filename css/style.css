@@ -225,3 +225,11 @@ h4 {
     scroll-snap-type: y mandatory; /* Snap vertically (y-axis) */
     scroll-behavior: smooth; /* Smooth scrolling */
 }
+
+.warning {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
